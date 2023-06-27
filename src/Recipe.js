@@ -4,11 +4,11 @@ const Recipe = ({ title, calories, image, ingredients }) => {
   return (
     <div className={style.recipe}>
       <h1>{title}</h1>
-      <ol>
+      <ul>
         {ingredients.map((ingredients) => (
           <li>{ingredients.text}</li>
         ))}
-      </ol>
+      </ul>
       <p>
         <span style={{ fontWeight: "bold" }}>Calories: </span>
         {parseInt(calories)}(appr.)
